@@ -5,14 +5,14 @@ box-sizing:border-box;
 font-family:Poppins,sans-serif;
 }
 
-/* NAVBAR */
+/* NAVIGATION */
 
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 10%;
-background:#d8b4fe;
+background:#C9C6D3;
 }
 
 .logo{
@@ -32,7 +32,7 @@ color:black;
 font-weight:500;
 }
 
-/* HAMBURGER */
+/* HAMBURGER MENU */
 
 .hamburger-icon{
 display:none;
@@ -51,11 +51,16 @@ margin:4px 0;
 display:none;
 list-style:none;
 text-align:center;
-background:#d8b4fe;
+background:#C9C6D3;
 }
 
 .mobile-menu li{
 padding:10px;
+}
+
+.mobile-menu a{
+text-decoration:none;
+color:black;
 }
 
 /* SECTIONS */
@@ -70,7 +75,7 @@ font-size:40px;
 margin-bottom:20px;
 }
 
-/* PROFILE */
+/* PROFILE SECTION */
 
 #profile{
 min-height:70vh;
@@ -78,7 +83,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:#7c3aed;
+background:#A88CC7;
 color:white;
 }
 
@@ -118,19 +123,20 @@ color:white;
 /* ABOUT */
 
 #about{
-background:#d8b4fe;
+background:#C9C6D3;
 }
 
 .about-text{
 max-width:800px;
 margin:auto;
 line-height:1.7;
+font-size:16px;
 }
 
 /* SKILLS */
 
 #skillset{
-background:#7c3aed;
+background:#A88CC7;
 color:white;
 }
 
@@ -149,10 +155,22 @@ background:white;
 color:black;
 }
 
+.skill-card h2{
+margin-bottom:15px;
+}
+
+.skill-card ul{
+list-style:none;
+}
+
+.skill-card li{
+margin-bottom:10px;
+}
+
 /* PROJECTS */
 
 #projects{
-background:#d8b4fe;
+background:#C9C6D3;
 }
 
 .projects-container{
@@ -167,6 +185,12 @@ border:1px solid #ddd;
 padding:20px;
 border-radius:12px;
 background:white;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .project-img{
@@ -180,7 +204,7 @@ margin-bottom:10px;
 /* CONTACT */
 
 #contact{
-background:#7c3aed;
+background:#A88CC7;
 color:white;
 }
 
@@ -189,6 +213,7 @@ display:flex;
 justify-content:center;
 gap:30px;
 flex-wrap:wrap;
+margin-top:20px;
 }
 
 .contact-item{
@@ -207,7 +232,7 @@ text-decoration:none;
 footer{
 text-align:center;
 padding:20px;
-background:#d8b4fe;
+background:#C9C6D3;
 }
 
 .footer-nav{
@@ -223,7 +248,7 @@ text-decoration:none;
 color:black;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
 
 @media(max-width:768px){
 
@@ -245,6 +270,14 @@ grid-template-columns:1fr;
 
 .projects-container{
 grid-template-columns:1fr;
+}
+
+section{
+padding:60px 6%;
+}
+
+.title{
+font-size:32px;
 }
 
 }
