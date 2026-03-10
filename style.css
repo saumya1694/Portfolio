@@ -5,11 +5,14 @@ box-sizing:border-box;
 font-family:Poppins,sans-serif;
 }
 
+/* NAVBAR */
+
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 10%;
+background:#d8b4fe;
 }
 
 .logo{
@@ -26,7 +29,10 @@ gap:30px;
 .nav-links a{
 text-decoration:none;
 color:black;
+font-weight:500;
 }
+
+/* HAMBURGER */
 
 .hamburger-icon{
 display:none;
@@ -45,11 +51,14 @@ margin:4px 0;
 display:none;
 list-style:none;
 text-align:center;
+background:#d8b4fe;
 }
 
 .mobile-menu li{
 padding:10px;
 }
+
+/* SECTIONS */
 
 section{
 padding:80px 10%;
@@ -61,15 +70,28 @@ font-size:40px;
 margin-bottom:20px;
 }
 
+/* PROFILE */
+
 #profile{
 min-height:70vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#d8b4fe,#7c3aed);
+background:#7c3aed;
 color:white;
 }
+
+.section__text__p1{
+font-size:18px;
+}
+
+.section__text__p2{
+font-size:22px;
+margin-bottom:15px;
+}
+
+/* SOCIAL ICONS */
 
 .icon{
 width:30px;
@@ -77,12 +99,39 @@ cursor:pointer;
 margin:10px;
 }
 
+/* BUTTONS */
+
 .btn{
 padding:10px 20px;
 border-radius:25px;
 border:1px solid black;
 background:white;
 cursor:pointer;
+margin:5px;
+}
+
+.btn:hover{
+background:black;
+color:white;
+}
+
+/* ABOUT */
+
+#about{
+background:#d8b4fe;
+}
+
+.about-text{
+max-width:800px;
+margin:auto;
+line-height:1.7;
+}
+
+/* SKILLS */
+
+#skillset{
+background:#7c3aed;
+color:white;
 }
 
 .skills-wrapper{
@@ -96,6 +145,14 @@ margin-top:30px;
 border:1px solid #ddd;
 padding:25px;
 border-radius:12px;
+background:white;
+color:black;
+}
+
+/* PROJECTS */
+
+#projects{
+background:#d8b4fe;
 }
 
 .projects-container{
@@ -109,6 +166,7 @@ margin-top:30px;
 border:1px solid #ddd;
 padding:20px;
 border-radius:12px;
+background:white;
 }
 
 .project-img{
@@ -119,6 +177,13 @@ border-radius:10px;
 margin-bottom:10px;
 }
 
+/* CONTACT */
+
+#contact{
+background:#7c3aed;
+color:white;
+}
+
 .contact-box{
 display:flex;
 justify-content:center;
@@ -126,10 +191,23 @@ gap:30px;
 flex-wrap:wrap;
 }
 
+.contact-item{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.contact-item a{
+color:white;
+text-decoration:none;
+}
+
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:20px;
-border-top:1px solid #ddd;
+background:#d8b4fe;
 }
 
 .footer-nav{
@@ -139,6 +217,13 @@ gap:30px;
 list-style:none;
 margin-bottom:10px;
 }
+
+.footer-nav a{
+text-decoration:none;
+color:black;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
