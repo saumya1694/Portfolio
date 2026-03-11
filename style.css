@@ -318,4 +318,16 @@ font-size:32px;
 height:220px;
 }
 
+#contact{
+padding:40px 6%;
+}
+
+.contact-box{
+margin-top:15px;
+}
+
+footer{
+padding:15px;
+}
+  
 }
