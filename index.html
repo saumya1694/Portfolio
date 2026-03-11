@@ -2,298 +2,232 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Saumya Verma Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saumya Verma Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Saumya Verma</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skillset">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <ul class="mobile-menu">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#skillset" onclick="toggleMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+
+  <!-- HERO SECTION -->
+  <section id="profile">
+
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Saumya Verma</h1>
+    <p class="section__text__p2">Software and Java Backend Developer</p>
+
+    <div class="btn-container">
+      <button
+        class="btn"
+        onclick="window.open('./assests/Saumya_Verma_Resume.pdf','_blank')"
+      >
+        Download Resume
+      </button>
+
+      <button
+        class="btn"
+        onclick="location.href='#contact'"
+      >
+        Contact Info
+      </button>
+    </div>
+
+    <div id="socials-container">
+      <img
+        src="./assests/linkedin.png"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/verma-saumya/'"
+      />
+
+      <img
+        src="./assests/github.png"
+        class="icon"
+        onclick="location.href='https://github.com/saumya1694'"
+      />
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+
+    <h1 class="title">About</h1>
+
+    <p class="about-text">
+      Final Year B.Tech CSE student (2026) passionate about Software Development and Backend Engineering.
+      Skilled in Java, Core Java, Spring Boot, Spring MVC, REST APIs, OOPs, DBMS, and MySQL.
+      Interested in building scalable backend applications and improving problem-solving skills.
+      Actively seeking opportunities as a Java Backend Developer or Software Engineer.
+
+      <br /><br />
+
+      I am enthusiastic about opportunities that allow me to apply my technical skills and
+      knowledge to drive innovation and make a meaningful impact. Let’s connect and explore
+      how we can collaborate to create technology-driven solutions.
+    </p>
+
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skillset">
+
+    <h1 class="title">Skills</h1>
+
+    <div class="skills-wrapper">
+
+      <div class="skill-card">
+        <h2>Programming and Web</h2>
+        <ul>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
 
-<nav>
+      <div class="skill-card">
+        <h2>Frameworks and Tools</h2>
+        <ul>
+          <li>Spring Boot</li>
+          <li>Spring MVC</li>
+          <li>REST APIs</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
 
-<div class="logo">Saumya Verma</div>
+      <div class="skill-card">
+        <h2>Databases and Design</h2>
+        <ul>
+          <li>MySQL</li>
+          <li>Oracle</li>
+          <li>MongoDB</li>
+          <li>System Design</li>
+        </ul>
+      </div>
 
-<ul class="nav-links">
+    </div>
 
-<li><a href="#about">About</a></li>
-<li><a href="#skillset">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
+  </section>
 
-</ul>
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
 
-<div class="hamburger-icon" onclick="toggleMenu()">
+    <h1 class="title">Projects</h1>
 
-<span></span>
-<span></span>
-<span></span>
+    <div class="projects-container">
 
-</div>
+      <div class="project-card">
+        <img src="./assests/newweather.jpg" class="project-img" />
+        <h2>WeatherWise</h2>
+        <p>Live weather updates worldwide</p>
 
-</nav>
+        <button
+          class="btn"
+          onclick="window.open('https://github.com/saumya1694/Weather-App','_blank')"
+        >
+          Github
+        </button>
+      </div>
 
-<ul class="mobile-menu">
+      <div class="project-card">
+        <img src="./assests/movienew.webp" class="project-img" />
+        <h2>CineSearch</h2>
+        <p>Search movies with real-time API</p>
 
-<li><a href="#about" onclick="toggleMenu()">About</a></li>
-<li><a href="#skillset" onclick="toggleMenu()">Skills</a></li>
-<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <button
+          class="btn"
+          onclick="window.open('https://github.com/saumya1694/movie-search-app','_blank')"
+        >
+          Github
+        </button>
+      </div>
 
-</ul>
+      <div class="project-card">
+        <img src="./assests/githubnew.avif" class="project-img" />
+        <h2>RepoRadar</h2>
+        <p>Real-time GitHub profile finder</p>
 
-<!-- HERO -->
+        <button
+          class="btn"
+          onclick="window.open('https://github.com/saumya1694/github-profile-finder','_blank')"
+        >
+          Github
+        </button>
+      </div>
 
-<section id="profile">
+    </div>
 
-<p class="section__text__p1">Hello, I'm</p>
+  </section>
 
-<h1 class="title">Saumya Verma</h1>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
 
-<p class="section__text__p2">Software and Java Backend Developer</p>
+    <h1 class="title">Contact</h1>
 
-<div class="btn-container">
+    <div class="contact-box">
 
-<button
-class="btn"
-onclick="window.open('./assests/Saumya_Verma_Resume.pdf','_blank')">
+      <div class="contact-button">
 
-Download Resume
+        <img src="./assests/email.png" class="icon" />
 
-</button>
+        <a href="mailto:saumyaverma1609@gmail.com">
+          saumyaverma1609@gmail.com
+        </a>
 
-<button
-class="btn"
-onclick="location.href='#contact'">
+        <img src="./assests/linkedin.png" class="icon" />
 
-Contact Info
+        <a href="https://www.linkedin.com/in/verma-saumya/" target="_blank">
+          LinkedIn
+        </a>
 
-</button>
+      </div>
 
-</div>
+    </div>
 
-<div id="socials-container">
+  </section>
 
-<img
-src="./assests/linkedin.png"
-class="icon"
-onclick="location.href='https://www.linkedin.com/in/verma-saumya/'"
-/>
+  <!-- FOOTER -->
+  <footer>
 
-<img
-src="./assests/github.png"
-class="icon"
-onclick="location.href='https://github.com/saumya1694'"
-/>
+    <ul class="footer-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skillset">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-</div>
+    <p>© Saumya Verma. All Rights Reserved.</p>
 
-</section>
+  </footer>
 
-<!-- ABOUT -->
-
-<section id="about">
-
-<h1 class="title">About</h1>
-
-<p class="about-text">
-
-Final Year B.Tech CSE student (2026) passionate about Software Development and Backend Engineering. Skilled in Java, Core Java, Spring Boot, Spring MVC, REST APIs, OOPs, DBMS, and MySQL. Interested in building scalable backend applications and improving problem-solving skills. Actively seeking opportunities as a Java Backend Developer or Software Engineer.
-
-<br><br>
-
-I am enthusiastic about opportunities that allow me to apply my technical skills and knowledge to drive innovation and make a meaningful impact. Let’s connect and explore how we can collaborate to create technology-driven solutions.
-
-</p>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skillset">
-
-<h1 class="title">Skills</h1>
-
-<div class="skills-wrapper">
-
-<div class="skill-card">
-
-<h2>Programming and Web</h2>
-
-<ul>
-<li>Java</li>
-<li>SQL</li>
-<li>JavaScript</li>
-<li>HTML</li>
-<li>CSS</li>
-</ul>
-
-</div>
-
-<div class="skill-card">
-
-<h2>Frameworks and Tools</h2>
-
-<ul>
-<li>Spring Boot</li>
-<li>Spring MVC</li>
-<li>REST APIs</li>
-<li>Git & GitHub</li>
-</ul>
-
-</div>
-
-<div class="skill-card">
-
-<h2>Databases and Design</h2>
-
-<ul>
-<li>MySQL</li>
-<li>Oracle</li>
-<li>MongoDB</li>
-<li>System Design</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-<h1 class="title">Projects</h1>
-
-<div class="projects-container">
-
-<div class="project-card">
-
-<img src="./assests/newweather.jpg" class="project-img">
-
-<h2>WeatherWise</h2>
-
-<p>Live weather updates worldwide</p>
-
-<button
-class="btn"
-onclick="window.open('https://github.com/saumya1694/Weather-App','_blank')">
-
-Github
-
-</button>
-
-</div>
-
-<div class="project-card">
-
-<img src="./assests/movienew.webp" class="project-img">
-
-<h2>CineSearch</h2>
-
-<p>Search movies with real-time API</p>
-
-<button
-class="btn"
-onclick="window.open('https://github.com/saumya1694/movie-search-app','_blank')">
-
-Github
-
-</button>
-
-</div>
-
-<div class="project-card">
-
-<img src="./assests/githubnew.avif" class="project-img">
-
-<h2>RepoRadar</h2>
-
-<p>Real-time GitHub profile finder</p>
-
-<button
-class="btn"
-onclick="window.open('https://github.com/saumya1694/github-profile-finder','_blank')">
-
-Github
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<h1 class="title">Contact</h1>
-
-<div class="contact-box">
-
-<div class="contact-item">
-
-<img src="./assests/email.png" class="icon">
-
-<p>
-
-<a href="mailto:saumyaverma1609@gmail.com">
-
-saumyaverma1609@gmail.com
-
-</a>
-
-</p>
-
-</div>
-
-<div class="contact-item">
-
-<img src="./assests/linkedin.png" class="icon">
-
-<p>
-
-<a href="https://www.linkedin.com/in/verma-saumya/">
-
-LinkedIn
-
-</a>
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<ul class="footer-nav">
-
-<li><a href="#about">About</a></li>
-<li><a href="#skillset">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-<p>© Saumya Verma. All Rights Reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
