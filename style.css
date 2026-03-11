@@ -319,6 +319,8 @@ height:220px;
 }
 
 #contact{
+height:auto;
+min-height:auto;
 padding:40px 6%;
 }
 
