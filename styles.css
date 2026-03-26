@@ -121,13 +121,17 @@ a:hover::after {
 
 .menu-links {
   position: absolute;
-  top: 100%;
-  right: 0;
+  top: 60%;
+  right: 20px;
   background-color: #FFFFFF;
-  width: fit-content;
+  border-radius: 10px;
+  width: 200px;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  z-index: 999;
+  display: none;
 }
 
 .menu-links a {
@@ -146,6 +150,7 @@ a:hover::after {
 
 .menu-links.open {
   max-height: 300px;
+  display: block;
 }
 
 .hamburger-icon.open span:first-child {
@@ -405,17 +410,23 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;              
   border-radius: 2rem;
-  margin: 2rem auto;
-  padding: 0.5rem;
+  margin: 1rem auto;
+  padding: 0.8rem;
   background: var(--card);
   border: 1px solid var(--border);
+  width: 90%;
+  max-width: 400px;             
+  gap: 10px;
 }
 
 .contact-info-container {
@@ -423,30 +434,33 @@ section {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-size: 0.95rem;           
+  text-align: center;
 }
 
 .email-icon {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .section-subtitle {
   color: var(--subtext);
-  margin-bottom: 0px;
-  font-size: 1rem;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  text-align: center;
 }
 
 /* FOOTER */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: auto;                
+  margin: 0;
+  padding: 10px 0;
 }
 
 footer p {
   text-align: center;
+  font-size: 0.9rem;
 }
